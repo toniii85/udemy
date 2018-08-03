@@ -1,0 +1,3 @@
+live-server public -> lanza un express que se actualiza al guardar
+
+babel src/app.js --watch --out-file=public/scripts/app.js --presets=env,react --> necesario para compilar el codigo jsx y ver los cambios instantaneamente
