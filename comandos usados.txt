@@ -1,3 +1,6 @@
 live-server public -> lanza un express que se actualiza al guardar
 
 babel src/app.js --watch --out-file=public/scripts/app.js --presets=env,react --> necesario para compilar el codigo jsx y ver los cambios instantaneamente
+
+babel src/app.js --watch --out-file=public/scripts/app.js --presets=env,react --plugins=transform-class-properties 
+        --> necesario para compialar el codigo jsx y se incluye plugin para que no fallen las arrow functions, así de esa manera no hay que hacer binding this
